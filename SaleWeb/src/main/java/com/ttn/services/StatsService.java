@@ -4,21 +4,13 @@
  */
 package com.ttn.services;
 
-import com.ttn.pojo.Product;
 import java.util.List;
-import java.util.Map;
 
 /**
  *
  * @author Win11
  */
-public interface ProductService {
-
-    List<Product> getProds(Map<String, String> params);
-
-    void addOrUpdate(Product p);
-
-    public Product getProductById(int id);
-
-    void deleteProduct(int id);
+public interface StatsService {
+    List<Object[]> statsRevenueByProduct();
+    List<Object[]> statsRevenueByPeriod(int year, String period);
 }

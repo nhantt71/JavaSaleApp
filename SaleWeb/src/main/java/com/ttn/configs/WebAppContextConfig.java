@@ -22,7 +22,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-
 /**
  *
  * @author Win11
@@ -45,8 +44,6 @@ public class WebAppContextConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/");
     }
-    
-    
 
     @Bean
     public MessageSource messageSource() {
@@ -100,4 +97,5 @@ public class WebAppContextConfig implements WebMvcConfigurer {
         return cloudinary;
     }
 }
+ 
 
